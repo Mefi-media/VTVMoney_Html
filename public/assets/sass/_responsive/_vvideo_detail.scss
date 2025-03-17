@@ -1,0 +1,152 @@
+@media only screen and (min-width: 1200px) and (max-width: 1460px)
+{
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) 
+{
+	.vvideo-detail {
+		&__content {
+			&-main {
+				width: calc(100% - 20px - 280px);
+				margin-right: 20px;
+				.video-name {
+					.name {
+						font-size: 30px;
+					}
+				}
+			}
+			&-lists {
+				width: 280px;
+				.lists-video {
+					.item-vlight {
+						&__image {
+							.image {
+								height: 160px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+	.vvideo {
+		&-detail {
+			&__content {
+				&-main {
+					width: 100%;
+					margin-right: unset;
+					.video-name {
+						.name {
+							font-size: 28px;
+						}
+					}
+				}
+				&-lists {
+					width: 100%;
+					margin-top: 20px;
+					.lists-video {
+						.item-vlight {
+							width: calc((100% - 20px)/2);
+							float: left;
+							&__image {
+								.image {
+									height: 200px;
+								}
+							}
+							&:nth-child(2n+2) {
+								margin-left: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-relate {
+			&__lists {
+				.item-vlight {
+					width: calc((100% - 40px)/3);
+					margin-right: unset;
+					&:nth-child(3n+2) {
+						margin-right: 20px;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+		&-update {
+			&__lists {
+				.item-vlight {
+					width: calc((100% - 40px)/3);
+					margin-right: unset;
+					&:nth-child(3n+2) {
+						margin-right: 20px;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) 
+{
+	.vvideo {
+		&-detail {
+			&__content {
+				&-main {
+					width: 100%;
+					margin-right: unset;
+					.video-name {
+						.name {
+							font-size: 26px;
+							line-height: 38px;
+						}
+					}
+				}
+				&-lists {
+					width: 100%;
+					margin-top: 20px;
+					.lists-video {
+						max-height: unset;
+						padding-right: unset;
+						.item-vlight {
+							&__image {
+								.image {
+									height: 200px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&-relate {
+			&__lists {
+				.item-vlight {
+					width: 100%;
+					margin-right: unset;
+					&__image {
+						.image {
+							height: 240px;
+						}
+					}
+				}
+			}
+		}
+		&-update {
+			&__lists {
+				.item-vlight {
+					width: 100%;
+					margin-right: unset;
+					&__image {
+						.image {
+							height: 240px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

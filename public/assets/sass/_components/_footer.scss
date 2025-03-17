@@ -1,0 +1,152 @@
+.footer {
+	border-top: 2px solid rgba(0, 39, 71, 1);
+	margin-top: 50px;
+	background: #fff;
+	&-top {
+		padding: 10px 0;
+		&__content {
+			&-logo {
+				width: 630px;
+				float: left;
+				.logo-foot {
+					&__img {
+						width: 190px;
+						overflow: hidden;
+						img {
+							width: 100%;
+							height: 24px;
+							object-fit: contain;
+						}
+					}
+				}
+				.text-foot {
+					margin-top: 10px;
+					font-size: 20px;
+					text-transform: uppercase;
+					span {
+						font-family: 'NotoSerif-Bold';
+					}
+				}
+			}
+			&-action {
+				width: calc(100% - 630px);
+				float: right;
+				align-items: center;
+				justify-content: flex-end;
+				.link-news,.link-contacts {
+					&__icon {
+						width: 24px;
+						height: 24px;
+						overflow: hidden;
+						margin-right: 5px;
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: contain;
+						}
+					}
+					&__text {
+						width: calc(100% - 24px);
+						color: rgba(0, 0, 0, 1);
+						font-size: 16px;
+						font-family: 'Montserrat-Regular';
+						text-transform: uppercase;
+						transition: all 0.3s;
+						&:hover {
+							color: $color_main;
+						}
+					}
+				}
+				.link-contacts {
+					margin-left: 15px;
+				}
+				.search-foot {
+					width: 300px;
+					margin-left: 15px;
+					.form-search-general {
+						position: relative;
+						display: block;
+						input {
+							width: 100%;
+							height: 40px;
+							border: 1px solid rgba(194, 201, 209, 1);
+							border-radius: 8px;
+							overflow: hidden;
+							padding-left: 38px;
+						}
+						.btn-submit {
+							width: 20px;
+							height: 20px;
+							overflow:  hidden;
+							position: absolute;
+							top: 10px;
+							left: 10px;
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: contain;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&-content {
+		padding: 45px 0 30px;
+		&__main {
+			justify-content: flex-end;
+			&-information {
+				width: calc(100% - 230px);
+				.info-foot {
+					width: calc((100% - 30px)/2);
+					&:nth-child(2n+2) {
+						margin-right: 30px;
+					}
+					.item-info {
+						margin-top: 30px;
+						&:first-child {
+							margin-top: unset;
+						}
+						&__title {
+							font-size: 16px;
+							font-family: 'Montserrat-Regular';
+							margin-right: 5px;
+						}
+						&__text {
+							max-width: 300px;
+							font-size: 16px;
+							font-family: 'Montserrat-Bold';
+						}
+					}
+				}
+			}
+			&-links {
+				width: 230px;
+				order: 2;
+				&--columns {
+					&:nth-child(2n+2) {
+						margin-left: 5px;
+					}
+					ul {
+						li {
+							margin-top: 30px;
+							a {
+								color: rgba(0, 0, 0, 1);
+								font-size: 16px;
+								font-family: 'Montserrat-Bold';
+								transition: all 0.3s;
+								&:hover {
+									color: $color_main;
+								}
+							}
+							&:first-child {
+								margin-top: unset;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

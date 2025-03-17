@@ -1,0 +1,73 @@
+.css-content {
+	h1,h2,h3,h4,h5,h6 {
+		font-family: "Montserrat-Semibold",serif;
+		color: rgba(0, 0, 0, 1);
+		font-weight: 600;
+		margin-top: 10px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	img {
+		width: 100%;
+		object-fit: contain;
+		margin: 6px auto 0;
+	}
+	p,span,b {
+		font-size: 16px;
+		line-height: 25px;
+		margin-bottom: 10px;
+		text-align: justify;
+		font-weight: 'Montserrat-Regular';
+		strong {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 25px;
+			font-weight: 'Montserrat-Regular';
+		}
+		img {
+			width: 100%;
+			object-fit: contain;
+			margin: auto;
+		}
+	}
+	strong {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 25px;
+		font-weight: 'Montserrat-Regular';
+	}
+	em {
+		text-align: center;
+		font-style: italic;
+		margin-top: 5px;
+		font-family: Montserrat-Regular;
+		font-size: 15px;
+	}
+	figure {
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) 
+{
+	.css-content {
+		p,span,b {
+			font-size: 14px;
+			line-height: 19px;
+			strong {
+				font-size: 14px;
+				line-height: 19px;
+			}
+		}
+		strong,em {
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
+}

@@ -1,0 +1,130 @@
+@media only screen and (min-width: 1200px) and (max-width: 1460px)
+{
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) 
+{
+	.vmoney {
+		&-content {
+			&__main {
+				width: calc(100% - 20px - 280px);
+				margin-right: 20px;
+				&-lists {
+					&--highlight {
+						.single-blog {
+							width: calc(100% - 20px - 250px);
+							.item-highlight {
+								&__image {
+									.image {
+										height: 320px;
+									}
+								}
+							}
+						}
+						.multi-blog {
+							width: 250px;
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 280px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+	.vmoney {
+		&-content {
+			&__main {
+				width: 100%;
+				margin-right: unset;
+				&-lists {
+					&--highlight {
+						.single-blog {
+							width: calc(100% - 20px - 250px);
+							.item-highlight {
+								&__image {
+									.image {
+										height: 320px;
+									}
+								}
+							}
+						}
+						.multi-blog {
+							width: 250px;
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 100%;
+				margin-top: 30px;
+				display: unset;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) 
+{
+	.vmoney {
+		&-content {
+			&__main {
+				width: 100%;
+				margin-right: unset;
+				&-lists {
+					&--highlight {
+						.single-blog {
+							width: 100%;
+							.item-highlight {
+								&__image {
+									.image {
+										height: 240px;
+									}
+								}
+							}
+						}
+						.multi-blog {
+							width: 100%;
+							margin-left: unset;
+							margin-top: 20px;
+						}
+					}
+					&--multi {
+						.item-blog {
+							&__image {
+								width: 140px;
+								.image {
+									height: 110px;
+								}
+							}
+							&__info {
+								width: calc(100% - 16px - 140px);
+								&-name {
+									.name {
+										font-size: 16px;
+									}
+								}
+								&-desc {
+									margin-top: 8px;
+									p {
+										font-size: 14px;
+										-webkit-line-clamp: 2;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 100%;
+				margin-top: 30px;
+				display: unset;
+			}
+		}
+	}
+}

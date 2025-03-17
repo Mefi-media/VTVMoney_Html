@@ -1,0 +1,162 @@
+@media only screen and (min-width: 1200px) and (max-width: 1460px)
+{
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) 
+{
+	.vlight {
+		&-content {
+			&__main {
+				width: calc(100% - 20px - 250px);
+				margin-right: 20px;
+				&-lists {
+					&--highlight {
+						.single-highlight {
+							.item-vlight {
+								&__image {
+									width: 448px;
+									.image {
+										height: 290px;
+									}
+								}
+								&__info {
+									width: calc(100% - 30px - 448px);
+								}
+							}
+						}
+						.multi-blog {
+
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 250px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+	.vlight {
+		&-content {
+			&__main {
+				width: 100%;
+				margin-right: unset;
+				&-lists {
+					&--highlight {
+						.single-highlight {
+							.item-vlight {
+								&__image {
+									width: 478px;
+									.image {
+										height: 290px;
+									}
+								}
+								&__info {
+									width: calc(100% - 30px - 478px);
+								}
+							}
+						}
+						.multi-blog {
+							
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 100%;
+				margin-top: 30px;
+				display: none;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) 
+{
+	.vlight {
+		&-content {
+			&__main {
+				width: 100%;
+				margin-right: unset;
+				&-lists {
+					&--highlight {
+						.single-highlight {
+							.item-vlight {
+								&__image {
+									width: 100%;
+									.image {
+										height: 240px;
+									}
+								}
+								&__info {
+									width: 100%;
+									margin-top: 10px;
+									margin-left: unset;
+									&-desc {
+										margin-top: 5px;
+									}
+								}
+							}
+						}
+						.multi-highlight {
+							.item-vlight {
+								width: 100%;
+								&__image {
+									.image {
+										height: 240px;
+									}
+								}
+								&:nth-child(3n+2) {
+									margin-right: unset;
+									margin-left: unset;
+								}
+							}
+						}
+					}
+					&--vshort {
+						.vlight-slides {
+							.item-vlight {
+								&__image {
+									.image {
+										height: 300px;
+									}
+								}
+							}
+						}
+					}
+					&--multi {
+						.item-blog {
+							&__image {
+								width: 140px;
+								.image {
+									height: 110px;
+								}
+							}
+							&__info {
+								width: calc(100% - 16px - 140px);
+								&-name {
+									.name {
+										font-size: 16px;
+									}
+								}
+								&-desc {
+									margin-top: 8px;
+									p {
+										font-size: 14px;
+										-webkit-line-clamp: 2;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 100%;
+				margin-top: 30px;
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,169 @@
+@media only screen and (min-width: 1200px) and (max-width: 1294px)
+{
+	.footer {
+		&-top {
+			&__content {
+				&-logo {
+					width: 500px;
+				}
+				&-action {
+					width: calc(100% - 500px);
+				}
+			}
+		}
+		&-content {
+			&__main {
+				&-information {
+					.info-foot {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) 
+{
+	.footer {
+		&-top {
+			&__content {
+				&-logo {
+					width: 410px;
+				}
+				&-action {
+					width: calc(100% - 410px);
+					.search-foot {
+						width: 210px;
+					}
+				}
+			}
+		}
+		&-content {
+			&__main {
+				&-information {
+					.info-foot {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+	.footer {
+		&-top {
+			&__content {
+				&-logo {
+					width: 100%;
+					.logo-foot {
+						&__img {
+							margin: auto;
+						}
+					}
+					.text-foot {
+						text-align: center;
+					}
+				}
+				&-action {
+					width: 100%;
+					margin-top: 20px;
+					justify-content: center;
+				}
+			}
+		}
+		&-content {
+			&__main {
+				&-information {
+					width: 100%;
+					margin-right: unset;
+					.info-foot {
+						width: calc((100% - 30px)/2);
+						&:nth-child(2n+2) {
+							margin-left: 30px;
+						}
+					}
+				}
+				&-links {
+					width: 100%;
+					margin-top: 20px;
+					flex-wrap: wrap;
+					&--columns {
+						width: 100%;
+						ul {
+							flex-wrap: nowrap;
+							justify-content: center;
+							li {
+								margin-top: unset;
+								text-align: center;
+								margin-bottom: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) 
+{
+	.footer {
+		&-top {
+			padding: 10px;
+			&__content {
+				&-logo {
+					width: 100%;
+					.logo-foot {
+						&__img {
+							margin: auto;
+						}
+					}
+					.text-foot {
+						text-align: center;
+					}
+				}
+				&-action {
+					width: 100%;
+					margin-top: 20px;
+					justify-content: center;
+					.search-foot {
+						display: none;
+					}
+				}
+			}
+		}
+		&-content {
+			padding: 10px 10px 30px;
+			&__main {
+				&-information {
+					width: 100%;
+					margin-right: unset;
+					flex-wrap: wrap;
+					.info-foot {
+						width: 100%;
+						border-top: 1px solid rgba(226, 232, 240, 1);
+						margin-top: 20px;
+						padding-top: 20px;
+					}
+				}
+				&-links {
+					width: 100%;
+					margin-top: 20px;
+					flex-wrap: wrap;
+					&--columns {
+						width: 100%;
+						ul {
+							flex-wrap: nowrap;
+							justify-content: center;
+							li {
+								margin-top: unset;
+								text-align: center;
+								margin-bottom: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

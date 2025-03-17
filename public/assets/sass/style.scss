@@ -1,0 +1,34 @@
+$color_main: rgba(1, 54, 98, 1);
+$color_hover_name: rgba(255, 63, 97, 1);
+/* CSS BASE */
+@import './_base/_base.scss';
+@import './_base/_owl_carousel.scss';
+@import './_base/_fontawesome.scss';
+@import './_base/_select2.scss';
+@import './_base/_font.scss';
+@import './_base/_comment.scss';
+@import './_base/_css_content.scss';
+@import './_base/_general.scss';
+/* CSS COMPONENT */
+@import './_components/_header.scss';
+@import './_components/_footer.scss';
+@import './_components/_home.scss';
+@import './_components/_vdetail.scss';
+@import './_components/_vface.scss';
+@import './_components/_vlight.scss';
+@import './_components/_vmoney.scss';
+@import './_components/_vvideo_detail.scss';
+@import './_components/_vlive.scss';
+/* CSS COMPONENT */
+@import './_responsive/_header.scss';
+@import './_responsive/_footer.scss';
+@import './_responsive/_general.scss';
+@import './_responsive/_404.scss';
+@import './_responsive/_home.scss';
+@import './_responsive/_search.scss';
+@import './_responsive/_vdetail.scss';
+@import './_responsive/_vface.scss';
+@import './_responsive/_vlight.scss';
+@import './_responsive/_vmoney.scss';
+@import './_responsive/_vvideo_detail.scss';
+@import './_responsive/_vlive.scss';
