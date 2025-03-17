@@ -43,6 +43,9 @@
 	.container {
 		width: calc(760px - 20px);
 	}
+	.breadcrumb-content__ul-li a {
+	    font-size: 16px;
+	}
 	.title-general {
 		.title {
 
@@ -60,6 +63,9 @@
 	.container {
 		width: calc(450px - 20px);
 	}
+	.breadcrumb-content__ul-li a {
+	    font-size: 15px;
+	}
 	.title-general {
 		.title {
 
@@ -76,6 +82,9 @@
 {
 	.container {
 		width: calc(100% - 20px);
+	}
+	.breadcrumb-content__ul-li a {
+	    font-size: 15px;
 	}
 	.title-general {
 		.title {
