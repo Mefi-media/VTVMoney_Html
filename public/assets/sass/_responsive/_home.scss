@@ -297,7 +297,22 @@
 	}
 	.home {
 		&-chart {
-			display: none;
+			&__content {
+				display: flex;
+			    clear: both;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    overflow-x: scroll !important;
+			    -webkit-overflow-scrolling: touch;
+			    -ms-scroll-chaining: chained;
+			    flex-wrap: nowrap;
+			    &::-webkit-scrollbar {
+			    	display: none;
+			    }
+				.item-chart {
+					width: 165px;
+				}
+			}
 		}
 		&-vlive {
 			&__content {
