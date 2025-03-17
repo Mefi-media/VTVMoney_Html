@@ -89,6 +89,11 @@
 			}
 		}
 	}
+	.comment-popup {
+		height: calc(100vh - 60px);
+		max-height: calc(100vh - 60px);
+		// padding: 20px 0;
+	}
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) 
 {
@@ -111,6 +116,7 @@
 					.lists-video {
 						max-height: unset;
 						padding-right: unset;
+						overflow: unset;
 						.item-vlight {
 							&__image {
 								.image {
@@ -148,5 +154,12 @@
 				}
 			}
 		}
+	}
+	.comment-popup {
+		width: calc(100%);
+		height: calc(100vh - 60px);
+		max-height: calc(100vh - 60px);
+		top: 60px;
+		padding: 20px 0;
 	}
 }

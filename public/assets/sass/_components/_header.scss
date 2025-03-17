@@ -163,6 +163,16 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
+						position: relative;
+						&:after {
+							content: "";
+							width: 0;
+							height: 2px;
+							background: rgba(1, 54, 98, 1);
+							position: absolute;
+							bottom: 0;
+							transition: all 0.3s;
+						}
 						img {
 							width: 24px;
 							height: 24px;
@@ -178,6 +188,9 @@
 							&:hover {
 								border-color: $color_main;
 							}
+							&:after {
+								display: none;
+							}
 						}
 						a {
 							color: rgba(100, 116, 139, 1);
@@ -185,8 +198,33 @@
 							font-family: "Montserrat-SemiBold";
 							text-transform: uppercase;
 							transition: all 0.3s;
+							position: relative;
 							&:hover {
 								color: $color_main;
+							}
+						}
+						&.dot {
+							a {
+								&:before {
+									content: "";
+									width: 8px;
+									height: 8px;
+									border-radius: 50%;
+									background: rgba(237, 38, 73, 1);
+									position: absolute;
+									top: 5px;
+									left: -12px;
+								}
+							}
+						}
+						&.active {
+							&:after {
+								width: 81px;
+							}
+						}
+						&:hover {
+							&:after {
+								width: 81px;
 							}
 						}
 					}
