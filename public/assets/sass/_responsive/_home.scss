@@ -329,9 +329,13 @@
 				&-main {
 					width: 100%;
 					margin-right: unset;
+					&--title {
+
+					}
 					&--lists {
 						.single-blog {
 							width: 100%;
+							padding-bottom: 15px;
 							.item-blog {
 								&__image {
 									.image {
@@ -405,6 +409,9 @@
 			&__content {
 				&-title {
 					.title-general {
+						.title {
+							background: #fff;
+						}
 						.list-cate {
 							display: none;
 						}
