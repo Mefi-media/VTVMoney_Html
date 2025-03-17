@@ -54,8 +54,8 @@
 	.vdetail {
 		&-content {
 			&__main {
-				// width: 100%;
-				// margin-right: unset;
+				width: calc(100% - 20px - 250px);
+				margin-right: 20px;
 				&-detail {
 					&--head {
 						.name-blog {
@@ -94,8 +94,20 @@
 				}
 			}
 			&__sitebar {
-				// width: 100%;
-				// margin-top: 20px;
+				width: 250px;
+				.interested-new {
+					&__lists {
+						.item-blog {
+							&__info {
+								&-name {
+									.name {
+										text-align: unset;
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -147,6 +159,30 @@
 			&__sitebar {
 				width: 100%;
 				margin-top: 20px;
+				.ads-banner {
+					display: flex;
+				    clear: both;
+				    white-space: nowrap;
+				    overflow: hidden;
+				    overflow-x: scroll !important;
+				    -webkit-overflow-scrolling: touch;
+				    -ms-scroll-chaining: chained;
+				    flex-wrap: nowrap;
+				    &::-webkit-scrollbar {
+				    	display: none;
+				    }
+					&__item {
+						width: 350px;
+						margin-right: 10px;
+						img {
+							width: 350px;
+							max-width: 350px;
+						}
+						&:last-child {
+							margin-right: unset;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -214,6 +250,30 @@
 			&__sitebar {
 				width: 100%;
 				margin-top: 20px;
+				.ads-banner {
+					display: flex;
+				    clear: both;
+				    white-space: nowrap;
+				    overflow: hidden;
+				    overflow-x: scroll !important;
+				    -webkit-overflow-scrolling: touch;
+				    -ms-scroll-chaining: chained;
+				    flex-wrap: nowrap;
+				    &::-webkit-scrollbar {
+				    	display: none;
+				    }
+					&__item {
+						width: 300px;
+						margin-right: 10px;
+						img {
+							width: 300px;
+							max-width: 300px;
+						}
+						&:last-child {
+							margin-right: unset;
+						}
+					}
+				}
 			}
 		}
 	}

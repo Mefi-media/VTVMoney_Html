@@ -63,7 +63,30 @@
 			&__sitebar {
 				width: 100%;
 				margin-top: 30px;
-				display: unset;
+				.ads-banner {
+					display: flex;
+				    clear: both;
+				    white-space: nowrap;
+				    overflow: hidden;
+				    overflow-x: scroll !important;
+				    -webkit-overflow-scrolling: touch;
+				    -ms-scroll-chaining: chained;
+				    flex-wrap: nowrap;
+				    &::-webkit-scrollbar {
+				    	display: none;
+				    }
+					&__item {
+						width: 350px;
+						margin-right: 10px;
+						img {
+							width: 350px;
+							max-width: 350px;
+						}
+						&:last-child {
+							margin-right: unset;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -75,6 +98,17 @@
 			&__main {
 				width: 100%;
 				margin-right: unset;
+				&-title {
+					.title-general {
+						justify-content: flex-start;
+						.title {
+							background: $color_main;
+						}
+						.list-cate {
+							display: none;
+						}
+					}
+				}
 				&-lists {
 					&--highlight {
 						.single-blog {
@@ -123,7 +157,30 @@
 			&__sitebar {
 				width: 100%;
 				margin-top: 30px;
-				display: unset;
+				.ads-banner {
+					display: flex;
+				    clear: both;
+				    white-space: nowrap;
+				    overflow: hidden;
+				    overflow-x: scroll !important;
+				    -webkit-overflow-scrolling: touch;
+				    -ms-scroll-chaining: chained;
+				    flex-wrap: nowrap;
+				    &::-webkit-scrollbar {
+				    	display: none;
+				    }
+					&__item {
+						width: 300px;
+						margin-right: 10px;
+						img {
+							width: 300px;
+							max-width: 300px;
+						}
+						&:last-child {
+							margin-right: unset;
+						}
+					}
+				}
 			}
 		}
 	}
