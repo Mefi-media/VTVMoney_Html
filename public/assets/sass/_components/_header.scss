@@ -158,7 +158,7 @@
 				&__ul {
 					justify-content: center;
 					li {
-						width: calc((100% - 40px)/9);
+						width: calc((100% - 40px)/8);
 						float: left;
 						display: flex;
 						justify-content: center;
@@ -191,6 +191,9 @@
 							&:after {
 								display: none;
 							}
+						}
+						&:last-child {
+							
 						}
 						a {
 							color: rgba(100, 116, 139, 1);

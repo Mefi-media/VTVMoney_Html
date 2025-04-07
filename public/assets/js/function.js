@@ -63,6 +63,17 @@ function check_empty(value) {
         return false;
     }
 }
+if ($('.content-sitebar').length > 0) {
+    $(window).scroll(function(event){
+        // alert(12);
+        var st = $('.content-sitebar').offset().top;
+        if(st < 60){
+            $('.content-sitebar').removeClass('sticky-sitebar');
+        }else if(st >= 60) {
+            $('.content-sitebar').addClass('sticky-sitebar');
+        }
+    });
+}
 //show form search head mobile
 $('body').on('click','*[data-showFormSearch]',function(e){
     $('.form-search-general').slideToggle();

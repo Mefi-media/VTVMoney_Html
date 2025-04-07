@@ -1,4 +1,4 @@
-.vmoney {
+.vbank {
 	margin-top: 35px;
 	&-content {
 		&__main {
@@ -6,25 +6,11 @@
 			order: 1;
 			margin-right: 30px;
 			&-title {
-				height: 32px;
 				border-bottom: 1px solid $color_main;
 				border-radius: 0 0 0 10px;
 				.title-general {
-					justify-content: flex-end;
 					.list-cate {
-						width: calc(100% - 120px);
-						padding-right: 0;
-						display: flex;
-						justify-content: flex-end;
-						align-items: center;
-						.owl-item {
-							
-						}
-						&__li {
-							&:last-child {
-								padding-right: 0;
-							}
-						}
+						display: none;
 					}
 					.viewmore {
 						display: none;
@@ -37,51 +23,48 @@
 					.single-blog {
 						width: 630px;
 						order: 1;
-						.item-highlight {
-							width: 100%;
-							border-radius: 12px;
-							overflow: hidden;
-							position: relative;
+						background: #fff;
+						border-radius: 8px;
+						overflow: hidden;
+						.item-blog {
 							&__image {
-								width: 100%;
 								.image {
 									width: 100%;
 									height: 355px;
-									border-radius: 12px;
-									img {
-										width: 100%;
-										height: 100%;
-										object-fit: cover;
-										transition: all 0.3s;
-									}
+									overflow: hidden;
 								}
 							}
 							&__info {
-								width: 100%;
-								position: absolute;
-								bottom: 0;
-								left: 0;
-								background: rgba(0, 0, 0, .3);
-								padding: 10px 20px;
+								padding: 15px;
 								&-name {
 									.name {
-										color: #fff;
-										font-family: "NotoSerif-Medium";
-										font-size: 18px;
-										line-height: 28px;
+										font-size: 20px;
+										line-height: 32px;
+										transition: all 0.3s;
 										display: -webkit-box;
 									    -webkit-box-orient: vertical;
 									    -webkit-line-clamp: 2;
 									    overflow: hidden;
 									}
 								}
+								&-desc {
+									margin-top: 14px;
+									p {
+										font-size: 16px;
+										font-family: "Montserrat-Regular";
+										display: -webkit-box;
+									    -webkit-box-orient: vertical;
+									    -webkit-line-clamp: 3;
+									    overflow: hidden;
+									}
+								}
 							}
 							&:hover {
-								.item-highlight {
-									&__image {
-										.image {
-											img {
-												transform: scale(1.05);
+								.item-blog {
+									&__info {
+										&-name {
+											.name {
+												color: $color_hover_name;
 											}
 										}
 									}
@@ -93,32 +76,46 @@
 						width: calc(100% - 30px - 630px);
 						order: 2;
 						margin-left: 30px;
-						.lists-highlight {
-							&__li {
-								padding-bottom: 10px;
-								margin-bottom: 10px;
-								border-bottom: 1px solid rgba(226, 232, 240, 1);
-								.name {
-									font-size: 16px;
-									font-family: "NotoSerif-Medium";
-									line-height: 24px;
-									display: -webkit-box;
-								    -webkit-box-orient: vertical;
-								    -webkit-line-clamp: 2;
-								    overflow: hidden;
-								    color: rgba(1, 54, 98, 1);
-								    transition: all 0.3s;
-								}
-								&:last-child {
-									border-bottom: none;
-									padding-bottom: unset;
-									margin-bottom: unset;
-								}
-								&:hover {
-									.name {
-										color: $color_hover_name;
+						.item-blog {
+							width: 100%;
+							border-radius: 8px;
+							margin-top: 8px;
+							&__image {
+								width: 100%;
+								.image {
+									width: 100%;
+									height: 168px;
+									border-radius: 8px;
+									overflow: hidden;
+									img {
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
 									}
 								}
+							}
+							&__info {
+								width: 100%;
+								padding: 10px;
+								position: absolute;
+								background: rgba(0, 0, 0, .4);
+								bottom: 0;
+								left: 0;
+								&-name {
+									.name {
+										color: #fff;
+										font-size: 14px;
+										line-height: 19px;
+										font-family: "NotoSerif-Medium";
+										display: -webkit-box;
+									    -webkit-box-orient: vertical;
+									    -webkit-line-clamp: 2;
+									    overflow: hidden;
+									}
+								}
+							}
+							&:first-child {
+								margin-top: unset;
 							}
 						}
 					}
@@ -243,88 +240,6 @@
 						width: 100%;
 						height: 100%;
 						object-fit: contain;
-					}
-				}
-			}
-			.interested-new {
-				position: sticky;
-				margin-top: 25px;
-				padding: 16px 12px;
-				background: #fff;
-				border-radius: 8px;
-				&__title {
-					position: relative;
-					padding-bottom: 6px;
-					&:after {
-						content: "";
-						width: 80px;
-						height: 4px;
-						background: rgba(237, 38, 73, 1);
-						position: absolute;
-						bottom: 0;
-						left: 0;
-					}
-					.title {
-						color: $color_main;
-						text-transform: uppercase;
-						font-size: 18px;
-						line-height: 28px;
-						font-family: "Montserrat-Bold";
-					}
-				}
-				&__lists {
-					margin-top: 12px;
-					.item-blog {
-						width: 100%;
-						display: flex;
-						flex-wrap: wrap;
-						padding-bottom: 14px;
-						margin-bottom: 8px;
-						border-bottom: 1px solid rgba(226, 232, 240, 1);
-						&__image {
-							width: 80px;
-							order: 1;
-							.image {
-								width: 100%;
-								height: 60px;
-								border-radius: 3px;
-							}
-						}
-						&__info {
-							width: calc(100% - 9px - 80px);
-							order: 2;
-							margin-left: 9px;
-							&-name {
-								.name {
-									font-size: 14px;
-									font-family: "Montserrat-SemiBold";
-									color: rgba(0, 0, 0, 1.0);
-									display: -webkit-box;
-								    -webkit-box-orient: vertical;
-								    -webkit-line-clamp: 2;
-								    overflow: hidden;
-								}
-							}
-							&-other {
-								margin-top: 5px;
-								.created-at {
-									margin-left: unset;
-									&:before {
-										display: none;
-									}
-									span {
-										font-size: 11px;
-										color: rgba(100, 116, 139, 1);
-										font-family: "Montserrat-Medium";
-									}
-								}
-							}
-						}
-						&:last-child {
-							margin-bottom: unset;
-							padding-bottom: unset;
-							border-bottom: none;
-						}
 					}
 				}
 			}
