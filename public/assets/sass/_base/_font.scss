@@ -44,6 +44,16 @@
     font-display:swap
 }
 @font-face{
+    font-family:"Montserrat-Italic";
+    font-weight:400;
+    font-style:normal;
+    src:url("../fonts/Montserrat/Montserrat-Italic.ttf") format("ttf"),
+    url("../fonts/Montserrat/Montserrat-Italic.ttf") format("opentype"),
+    url("../fonts/Montserrat/Montserrat-Italic.ttf") format("opentype");
+    font-display:swap
+}
+// font NotoSerif
+@font-face{
     font-family:"NotoSerif-Bold";
     font-weight:700;
     font-style:normal;
@@ -59,5 +69,33 @@
     src:url("../fonts/NotoSerif/NotoSerif-Medium.ttf") format("ttf"),
     url("../fonts/NotoSerif/NotoSerif-Medium.ttf") format("opentype"),
     url("../fonts/NotoSerif/NotoSerif-Medium.ttf") format("opentype");
+    font-display:swap
+}
+// font noto san
+@font-face{
+    font-family:"NotoSans-Bold";
+    font-weight:700;
+    font-style:normal;
+    src:url("../fonts/NotoSans/NotoSans-SemiBold.ttf") format("ttf"),
+    url("../fonts/NotoSans/NotoSans-SemiBold.ttf") format("opentype"),
+    url("../fonts/NotoSans/NotoSans-SemiBold.ttf") format("opentype");
+    font-display:swap
+}
+@font-face{
+    font-family:"NotoSans-Medium";
+    font-weight:600;
+    font-style:normal;
+    src:url("../fonts/NotoSans/NotoSans-Medium.ttf") format("ttf"),
+    url("../fonts/NotoSans/NotoSans-Medium.ttf") format("opentype"),
+    url("../fonts/NotoSans/NotoSans-Medium.ttf") format("opentype");
+    font-display:swap
+}
+@font-face{
+    font-family:"NotoSans-Regular";
+    font-weight:400;
+    font-style:normal;
+    src:url("../fonts/NotoSans/NotoSans-Regular.ttf") format("ttf"),
+    url("../fonts/NotoSans/NotoSans-Regular.ttf") format("opentype"),
+    url("../fonts/NotoSans/NotoSans-Regular.ttf") format("opentype");
     font-display:swap
 }

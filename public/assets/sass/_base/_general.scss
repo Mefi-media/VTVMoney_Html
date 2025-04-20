@@ -156,7 +156,7 @@
 	&__info {
 		&-name {
 			.name {
-				font-family: "NotoSerif-Medium";
+				font-family: "NotoSans-Medium";
 				color: rgba(1, 54, 98, 1);
 				transition: all 0.3s;
 				text-align: justify;
@@ -174,7 +174,7 @@
 			.category {
 				a {
 					color: rgba(0, 0, 0, 1);
-					font-family: "NotoSerif-Medium";
+					font-family: "NotoSans-Medium";
 					transition: all 0.3s;
 					&:hover {
 						color: $color_main;
