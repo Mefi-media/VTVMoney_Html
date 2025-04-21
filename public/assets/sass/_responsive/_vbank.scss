@@ -4,11 +4,126 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) 
 {
-	
+	.vbank {
+		&-content {
+			&__main {
+				width: calc(100% - 260px - 20px);
+				margin-right: 20px;
+				&-lists {
+					&--highlight {
+						.single-blog {
+							width: 100%;
+							.item-blog {
+								&__image {
+									.image {
+
+									}
+								}
+							}
+						}
+						.multi-blog {
+							width: 100%;
+							display: flex;
+							flex-wrap: wrap;
+							margin-left: unset;
+							.item-blog {
+								width: calc((100% - 40px)/3);
+								margin-top: 8px;
+								&:nth-child(3n+2) {
+									margin-left: 20px;
+									margin-right: 20px;
+								}
+								&__image {
+									.image {
+										height: 160px;
+									}
+								}
+								&:first-child {
+									margin-top: 8px;
+								}
+							}
+						}
+					}
+					&--multi {
+						.item-blog {
+							&__image {
+								width: 200px;
+								.image {
+									height: 135px;
+								}
+							}
+							&__info {
+								width: calc(100% - 200px - 16px);
+							}
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 260px;
+			}
+		}
+	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) 
 {
-	
+	.vbank {
+		&-content {
+			&__main {
+				width: 100%;
+				margin-right: unset;
+				&-lists {
+					&--highlight {
+						.single-blog {
+							width: 100%;
+							.item-blog {
+
+							}
+						}
+						.multi-blog {
+							width: 100%;
+							display: flex;
+							flex-wrap: wrap;
+							margin-left: unset;
+							.item-blog {
+								width: calc((100% - 40px)/3);
+								margin-top: 8px;
+								&:nth-child(3n+2) {
+									margin-left: 20px;
+									margin-right: 20px;
+								}
+								&__image {
+									.image {
+										height: 160px;
+									}
+								}
+								&:first-child {
+									margin-top: 8px;
+								}
+							}
+						}
+					}
+					&--multi {
+						.item-blog {
+							&__image {
+								width: 200px;
+								.image {
+									height: 135px;
+								}
+							}
+							&__info {
+								width: calc(100% - 200px - 16px);
+							}
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 100%;
+				display: none;
+			}
+		}
+	}
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) 
 {

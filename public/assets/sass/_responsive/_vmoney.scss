@@ -4,11 +4,140 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) 
 {
-	
+	.vmoney {
+		&-content {
+			&__main {
+				width: calc(100% - 220px - 20px);
+				margin-right: 20px;
+				&-lists {
+					&--highlight {
+						.single-blog {
+							width: calc(100% - 250px - 20px);
+							.item-blog {
+								&__image {
+									.image {
+										height: 326px;
+									}
+								}
+							}
+						}
+						.multi-blog {
+							width: 250px;
+							margin-left: 20px;
+							.lists-highlight {
+								.item-blog {
+									margin-bottom: 10px;
+									padding-bottom: 10px;
+								}
+							}
+						}
+					}
+					&--multi {
+						.item-blog {
+							&__image {
+								width: 200px;
+								.image {
+									height: 135px;
+								}
+							}
+							&__info {
+								width: calc(100% - 200px - 16px);
+							}
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 220px;
+			}
+		}
+	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) 
 {
-	
+	.vmoney {
+		&-content {
+			&__main {
+				width: 100%;
+				margin-right: unset;
+				&-lists {
+					&--highlight {
+						.single-blog {
+							width: calc(100% - 250px - 20px);
+							.item-blog {
+								&__image {
+									.image {
+										height: 326px;
+									}
+								}
+							}
+						}
+						.multi-blog {
+							width: 250px;
+							margin-left: 20px;
+							.lists-highlight {
+								.item-blog {
+									margin-bottom: 10px;
+									padding-bottom: 10px;
+								}
+							}
+						}
+					}
+					&--multi {
+						.item-blog {
+							&__image {
+								width: 200px;
+								.image {
+									height: 135px;
+								}
+							}
+							&__info {
+								width: calc(100% - 200px - 16px);
+							}
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 100%;
+				margin-top: 20px;
+				.ads-banner {
+					display: none;
+				}
+				.page-facebook {
+					display: none;
+				}
+				.interested-new {
+					&__lists {
+						.item-blog {
+							&__image {
+								width: 200px;
+								.image {
+									height: 125px;
+								}
+							}
+							&__info {
+								width: calc(100% - 200px - 16px);
+								&-name {
+									.name {
+										font-size: 16px;
+										line-height: 24px;
+									}
+								}
+								&-other {
+									.created-at {
+										span {
+											font-size: 14px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) 
 {

@@ -18,10 +18,11 @@
 			&-lists {
 				width: 280px;
 				.lists-video {
+					max-height: 680px;
 					.item-vlight {
 						&__image {
 							.image {
-								height: 160px;
+								height: 150px;
 							}
 						}
 					}
@@ -48,16 +49,53 @@
 					width: 100%;
 					margin-top: 20px;
 					.lists-video {
+						max-height: unset;
+						padding-right: unset;
+						clear: both;
+						display: flex;
+				        white-space: nowrap;
+				        overflow: hidden;
+				        overflow-x: scroll !important;
+				        -webkit-overflow-scrolling: touch;
+				        -ms-scroll-chaining: chained;
+				        flex-wrap: nowrap;
+				        &::-webkit-scrollbar {
+					    	display: none;
+					    }
 						.item-vlight {
-							width: calc((100% - 20px)/2);
-							float: left;
+							width: 300px;
+							margin-right: 10px;
+							position: relative;
+							&:last-child {
+								margin-right: unset;
+							}
 							&__image {
+								width: 300px;
 								.image {
-									height: 200px;
+									height: 168px;
 								}
 							}
-							&:nth-child(2n+2) {
-								margin-left: 20px;
+							&__info {
+								position: absolute;
+								width: 100%;
+								left: 0;
+								bottom: 0;
+								padding: 10px;
+								background: linear-gradient(to top, rgba(0, 0, 0, .9),rgba(0, 0, 0, .1));
+								&-name {
+									white-space: normal;
+									.name {
+										font-size: 12px;
+										line-height: 16px;
+										display: -webkit-box;
+									    -webkit-box-orient: vertical;
+									    -webkit-line-clamp: 2;
+									    overflow: hidden;
+									}
+								}
+								&-time {
+									top: -33px;
+								}
 							}
 						}
 					}

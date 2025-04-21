@@ -124,6 +124,28 @@
 		}
 	}
 }
+.slide-stock-chart {
+	.owl-nav {
+		.owl-next,.owl-prev {
+			position: absolute;
+			top: 0;
+			width: 24px;
+			height: 24px;
+			background: rgba(235, 246, 255, 1);
+			border-radius: 4px;
+			i {
+				color: rgba(0, 114, 248, 1);
+				font-size: 20px;
+			}
+		}
+		.owl-next {
+			right: 0;
+		}
+		.owl-prev {
+			right: 33px;
+		}
+	}
+}
 //css item blog general
 .item-blog {
 	position: relative;

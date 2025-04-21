@@ -1373,8 +1373,12 @@
         <script>
             $('body').on('click','*[data-actionLive]',function(e){
                 var action = $(this).attr('data-actionLive');
+                $('*[data-actionLive]').find('.icon .icon-w').addClass('hidden');
+                $('*[data-actionLive]').find('.icon .icon-d').addClass('show').removeClass('hidden');
                 $('*[data-box]').slideUp();
                 $('.box-'+action).slideToggle();
+                $(this).find('.icon .icon-w').removeClass('hidden').addClass('show');
+                $(this).find('.icon .icon-d').removeClass('show').addClass('hidden');
             });
             $('.vlive-event-slide').owlCarousel({
                 loop:true,

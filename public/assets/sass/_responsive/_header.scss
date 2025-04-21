@@ -24,12 +24,12 @@
 				}
 			}
 			.logo-head {
-				width: 200px;
+				width: calc(100% - 50px - 80px);
 				float: left;
 				height: 40px;
 				display: flex;
 				align-items: center;
-				justify-content: flex-start;
+				justify-content: center;
 				img {
 					width: 150px;
 					height: 25px;
@@ -37,7 +37,7 @@
 				}
 			}
 			.head-action {
-				width: calc(100% - 200px - 50px);
+				width: 80px;
 				float: right;
 				display: flex;
 				justify-content: flex-end;

@@ -109,7 +109,9 @@
 {
 	.footer {
 		&-top {
-			padding: 10px;
+			padding: 10px 0 15px 0;
+			border-bottom: 1px solid rgba(226, 232, 240, 1);
+			margin-bottom: 10px;
 			&__content {
 				&-logo {
 					width: 100%;
@@ -120,12 +122,35 @@
 					}
 					.text-foot {
 						text-align: center;
+						font-size: 18px;
 					}
 				}
 				&-action {
 					width: 100%;
 					margin-top: 20px;
 					justify-content: center;
+					.link-news {
+						&__icon {
+							width: 20px;
+							height: 20px;
+						}
+						&__text {
+							font-size: 14px;
+						}
+					}
+					.link-contacts {
+						position: relative;
+						margin-left: 22px;
+						&:before {
+							content: "";
+							width: 1px;
+							height: 24px;
+							background: rgba(226, 232, 240, 1);
+							position: absolute;
+							top: 0;
+							left: -10px;
+						}
+					}
 					.search-foot {
 						display: none;
 					}
@@ -142,8 +167,27 @@
 					.info-foot {
 						width: 100%;
 						border-top: 1px solid rgba(226, 232, 240, 1);
-						margin-top: 20px;
-						padding-top: 20px;
+						margin-top: 12px;
+						padding-top: 15px;
+						&:nth-child(2n+2) {
+							margin-right: unset;
+						}
+						&:first-child {
+							border-top: unset;
+							margin-top: unset;
+							padding-top: unset;
+						}
+						.item-info {
+							margin-top: 16px;
+							&__title {
+								font-size: 14px;
+								line-height: 20px;
+							}
+							&__text {
+								font-size: 14px;
+								line-height: 20px;
+							}
+						}
 					}
 				}
 				&-links {
@@ -159,6 +203,9 @@
 								margin-top: unset;
 								text-align: center;
 								margin-bottom: 10px;
+								a {
+									font-size: 14px;
+								}
 							}
 						}
 					}

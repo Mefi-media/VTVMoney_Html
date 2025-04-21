@@ -98,6 +98,7 @@
 									margin-left: 5px;
 								}
 								.created-at {
+									display: none;
 									font-size: 14px;
 									font-family: "Montserrat-Regular";
 									line-height: 19px;
@@ -114,6 +115,33 @@
 										top: 50%;
 										left: -10px;
 										transform: translateY(-50%);
+									}
+								}
+							}
+							&-number {
+								display: none;
+								margin-top: 6px;
+								span {
+									font-size: 12px;
+									position: relative;
+									color: rgba(100, 116, 139, 1);
+									margin-left: 20px;
+									&:before {
+										content: "";
+										width: 4px;
+										height: 4px;
+										border-radius: 50%;
+										background: rgba(100, 116, 139, 1);
+										position: absolute;
+										top: 6px;
+										left: -12px;
+									}
+									&:first-child {
+										color: rgba(0, 0, 0, 1);
+										margin-left: unset;
+										&:before {
+											display: none;
+										}
 									}
 								}
 							}

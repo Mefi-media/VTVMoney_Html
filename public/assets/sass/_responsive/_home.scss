@@ -26,12 +26,319 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) 
 {
-	
+	.vmoney-vface {
+		&__content {
+			&-vmoney {
+				width: calc(100% - 280px - 30px);
+				&--lists {
+					.single-blog {
+						.item-blog {
+							&__image {
+								.image {
+									height: 390px;
+								}
+							}
+							&__info {
+								&-other {
+									margin-top: 6px;
+								}
+							}
+						}
+					}
+					.multi-blog {
+						.item-blog {
+							width: calc((100% - 30px)/2);
+							&:nth-child(3n+2) {
+								margin-left: unset;
+								margin-right: unset;
+							}
+							&:nth-child(2n+2) {
+								margin-left: 30px;
+							}
+							&__image {
+								.image {
+									// height: 120px;
+								}
+							}
+							&__info {
+								&-name {
+
+								}
+								&-other {
+									margin-top: 6px;
+									.category {
+										font-size: 14px;
+									}
+									.created-at {
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&-vface {
+				width: 280px;
+			}
+		}
+	}
+	.home {
+		&-chart {
+			margin-top: 12px;
+			&__content {
+				display: flex;
+			    clear: both;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    overflow-x: scroll !important;
+			    -webkit-overflow-scrolling: touch;
+			    -ms-scroll-chaining: chained;
+			    flex-wrap: nowrap;
+			    &::-webkit-scrollbar {
+			    	display: none;
+			    }
+				.item-chart {
+					width: 235px;
+				}
+			}
+		}
+		&-vlive {
+			&__content {
+				.single-blog {
+					width: calc(100% - 300px - 30px);
+					.item-blog {
+						&__image {
+							.image {
+								height: 330px;
+							}
+						}
+					}
+				}
+				.multi-blog {
+					width: 300px;
+					.item-blog {
+						&__image {
+							.image {
+								height: 190px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-trendup {
+
+		}
+		&-vstock {
+			&__content {
+				margin-top: 20px;
+				&-main {
+					width: calc(100% - 220px - 30px);
+					&--single {
+						width: calc(100% - 220px - 30px);
+						.item-blog {
+							&__image {
+								.image {
+									height: 270px;
+								}
+							}
+						}
+					}
+					&--multi {
+						width: 220px;
+						.item-blog {
+							&__image {
+								.image {
+									height: 140px;
+								}
+							}
+						}
+					}
+				}
+				&-chart {
+					width: 220px;
+				}
+			}
+		}
+		&-vbank {
+			&__content {
+				&-main {
+					width: calc(100% - 220px - 30px);
+					&--lists {
+						.single-blog {
+							width: calc(100% - 220px - 30px);
+							.item-blog {
+								&__image {
+									.image {
+										height: 279px;
+									}
+								}
+							}
+						}
+						.multi-blog {
+							width: 220px;
+							.item-blog {
+								margin-bottom: 12px!important;
+								padding-bottom: 12px!important;
+								&__info {
+									&-name {
+										.name {
+											text-align: left!important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				&-ads {
+					width: 220px;
+				}
+			}
+		}
+	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) 
 {
-	
-}
+	.vmoney-vface {
+		&__content {
+			&-vmoney {
+				width: 100%;
+				margin-right: unset;
+			}
+			&-vface {
+				width: 100%;
+				&--ads {
+					display: none;
+				}
+			}
+		}
+	}
+	.home {
+		&-chart {
+			margin-top: 12px;
+			&__content {
+				display: flex;
+			    clear: both;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    overflow-x: scroll !important;
+			    -webkit-overflow-scrolling: touch;
+			    -ms-scroll-chaining: chained;
+			    flex-wrap: nowrap;
+			    &::-webkit-scrollbar {
+			    	display: none;
+			    }
+				.item-chart {
+					width: 235px;
+				}
+			}
+		}
+		&-vlive {
+			&__content {
+				.single-blog {
+					width: 100%;
+					margin-right: unset;
+				}
+				.multi-blog {
+					width: 100%;
+					margin-left: unset;
+					display: flex;
+					flex-wrap: wrap;
+					.item-blog {
+						width: calc((100% - 40px)/3);
+						&:nth-child(3n+2) {
+							margin-left: 20px;
+							margin-right: 20px;
+						}
+						&__image {
+							.image {
+								height: 160px;
+							}
+						}
+						&:first-child {
+							margin-top: 8px;
+						}
+					}
+				}
+			}
+		}
+		&-trendup {
+
+		}
+		&-vstock {
+			&__content {
+				&-main {
+					width: 100%;
+					margin-right: unset;
+					&--single {
+						width: 100%;
+						margin-right: unset;
+					}
+					&--multi {
+						width: 100%;
+						.item-blog {
+							width: calc((100% - 40px)/3);
+							margin-top: 8px;
+							&:nth-child(3n+2) {
+								margin-left: 20px;
+								margin-right: 20px;
+							}
+							&__image {
+								.image {
+									height: 160px;
+								}
+							}
+						}
+					}
+				}
+				&-chart {
+					width: 100%;
+					margin-top: 20px;
+				}
+			}
+		}
+		&-vbank {
+			&__content {
+				&-main {
+					width: 100%;
+					margin-right: unset;
+					&--lists {
+						.single-blog {
+							width: calc(100% - 220px - 30px);
+							.item-blog {
+								&__image {
+									.image {
+										height: 279px;
+									}
+								}
+							}
+						}
+						.multi-blog {
+							width: 220px;
+							.item-blog {
+								margin-bottom: 12px!important;
+								padding-bottom: 12px!important;
+								&__info {
+									&-name {
+										.name {
+											text-align: left!important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				&-ads {
+					display: none;
+					width: 100%;
+				}
+			}
+		}
+	}
+}	
 @media only screen and (min-width: 0px) and (max-width: 767px) 
 {
 	.vmoney-vface {
