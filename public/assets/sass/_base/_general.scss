@@ -31,6 +31,7 @@
 					position: absolute;
 					top: 4px;
 					right: 8px;
+					color: rgba(100, 116, 139, 1);
 				}
 				&:last-child {
 					&:after {
@@ -156,7 +157,7 @@
 	&__info {
 		&-name {
 			.name {
-				font-family: "NotoSans-Medium";
+				font-family: "NotoSans-Bold";
 				color: rgba(1, 54, 98, 1);
 				transition: all 0.3s;
 				text-align: justify;

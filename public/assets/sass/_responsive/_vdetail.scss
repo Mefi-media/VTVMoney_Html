@@ -190,6 +190,7 @@
 @media only screen and (min-width: 0px) and (max-width: 767px) 
 {
 	.vdetail {
+		margin-top: 20px;
 		&-content {
 			&__main {
 				width: 100%;
@@ -199,8 +200,8 @@
 					&--head {
 						.name-blog {
 							&__title {
-								font-size: 26px;
-								line-height: 36px;
+								font-size: 20px;
+								line-height: 30px;
 							}
 						}
 					}
@@ -222,25 +223,87 @@
 
 					}
 					&--lists {
+						clear: both;
+				        white-space: nowrap;
+				        overflow: hidden;
+				        overflow-x: scroll !important;
+				        -webkit-overflow-scrolling: touch;
+				        -ms-scroll-chaining: chained;
+				        flex-wrap: nowrap;
+				        overflow: auto;
+				        &::-webkit-scrollbar {
+					    	display: none;
+					    }
 						.single-blog {
-							width: 100%;
+							width: 236px;
+        					margin-right: 10px;
+        					background: none;
+        					overflow: unset;
 							.item-blog {
+								width: 236px;
 								&__image {
 									.image {
-										height: 240px;
+										border-radius: 8px;
+										overflow: hidden;
+										height: 130px;
+									}
+								}
+								&__info {
+									background: none;
+									padding: 8px 0;
+									&-name {
+										white-space: normal;
+										.name {
+											color: rgba(0, 0, 0, 1);
+											font-size: 12px;
+											line-height: 16px;
+											display: -webkit-box;
+										    -webkit-box-orient: vertical;
+										    -webkit-line-clamp: 2;
+										    overflow: hidden;
+										}
+									}
+									&-desc {
+										display: none;
 									}
 								}
 							}
 						}
 						.multi-blog {
-							width: 100%;
+							width: 730px;
 							margin-left: unset;
-							margin-top: 20px;
+							display: flex;
+					        clear: both;
+					        white-space: nowrap;
+					        flex-wrap: nowrap;
 							.item-blog {
-								margin-top: 20px;
+								width: 236px;
+								margin-right: 10px;
+								margin-top: unset;
+								&:last-child {
+									margin-right: unset;
+								}
 								&__image {
 									.image {
-										height: 240px;
+										border-radius: 8px;
+										height: 130px;
+									}
+								}
+								&__info {
+									background: none;
+									padding: 8px 0;
+									position: relative;
+									&-name {
+										white-space: normal;
+										.name {
+											color: rgba(0, 0, 0, 1);
+											font-size: 12px;
+											line-height: 16px;
+											display: -webkit-box;
+										    -webkit-box-orient: vertical;
+										    -webkit-line-clamp: 2;
+										    overflow: hidden;
+										}
 									}
 								}
 							}
@@ -251,6 +314,7 @@
 			&__sitebar {
 				width: 100%;
 				margin-top: 20px;
+				display: none;
 				.ads-banner {
 					display: flex;
 				    clear: both;

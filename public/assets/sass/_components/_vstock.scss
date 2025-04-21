@@ -119,6 +119,11 @@
 							}
 						}
 					}
+					.stock-chart {
+						order: 3;
+						display: none;
+						margin-top: 12px;
+					}
 				}
 				&--multi {
 					margin-top: 40px;
@@ -231,146 +236,6 @@
 					object-fit: contain;
 				}
 			}
-			.stock-chart {
-				&__top {
-					&-title {
-						strong {
-							font-size: 18px;
-							font-family: "Montserrat-Bold";
-							line-height: 26px;
-							color: rgba(1, 54, 98, 1)
-						}
-						.time-update {
-							margin-top: 8px;
-							span {
-								font-size: 12px;
-								font-family: "Montserrat-Regular";
-								font-style: italic;
-								line-height: 16px;
-								color: rgba(100, 116, 139, 1);
-							}
-						}
-					}
-					&-chart {
-						margin-top: 10px;
-					}
-				}
-				&__body {
-					margin-top: 6px;
-					.stock-exchange {
-						background: #fff;
-						border-radius: 8px;
-						padding: 6px;
-						.item {
-							border-bottom: 1px dashed rgba(226, 232, 240, 1);
-							&:last-child {
-								border-bottom: none;		
-							}
-							.name {
-								width: calc(100% - 60px - 112px);
-								order: 1;
-								padding: 6px 5px;
-								&-top {
-									position: relative;
-									padding-left: 15px;
-									img {
-										width: 14px;
-										height: 14px;
-										object-fit: contain;
-										position: absolute;
-										top: 3px;
-										left: 0;
-
-									}
-									span {
-										font-size: 14px;
-										line-height: 19px;
-										text-transform: uppercase;
-										color: rgba(15, 26, 42, 1);
-										font-family: "Montserrat-Bold";
-									}
-								}
-								&-bottom {
-									margin-top: 5px;
-									span {
-										font-size: 12px;
-										line-height: 15px;
-										color: rgba(15, 26, 42, 1);
-										font-family: "Montserrat-Regular";
-									}
-								}
-							}
-							.chart {
-								width: 60px;
-								order: 2;
-								img {
-									width: 100%;
-									height: 44px;
-									object-fit: contain;
-								}
-							}
-							.value {
-								width: 112px;
-								order: 3;
-								&-score {
-									text-align: right;
-									span {
-										font-size: 14px;
-										font-family: "Montserrat-Bold";
-										line-height: 19px;
-										color: rgba(15, 26, 42, 1);
-									}
-								}
-								&-index {
-									margin-top: 5px;
-									text-align: right;
-									span {
-										font-size: 14px;
-										font-family: "Montserrat-Medium";
-										line-height: 19px;
-									}
-									&.reduce {
-										span {
-											color: rgba(237, 38, 73, 1);
-										}
-									}
-									&.increase {
-										span {
-											color: rgba(0, 159, 80, 1);
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-				&__bottom {
-					margin-top:10px;
-					border-radius: 8px;
-					background: #fff;
-					display: flex;
-					justify-content: center;
-					a {
-						font-size: 16px;
-						line-height: 22px;
-						color: rgba(0, 114, 248, 1);
-						font-family: "NotoSans-Medium";
-						display: flex;
-						justify-content: center;
-						padding: 10px 0;
-						transition: all 0.3s;
-						img {
-							width: 24px;
-							height: 24px;
-							object-fit: contain;
-							margin-left: 5px;
-						}
-						&:hover {
-							color: $color_main;
-						}
-					}
-				}
-			}
 			.ads-banner {
 				&__item {
 					width: 100%;
@@ -382,6 +247,146 @@
 						object-fit: contain;
 					}
 				}
+			}
+		}
+	}
+}
+.stock-chart {
+	&__top {
+		&-title {
+			strong {
+				font-size: 18px;
+				font-family: "Montserrat-Bold";
+				line-height: 26px;
+				color: rgba(1, 54, 98, 1)
+			}
+			.time-update {
+				margin-top: 8px;
+				span {
+					font-size: 12px;
+					font-family: "Montserrat-Regular";
+					font-style: italic;
+					line-height: 16px;
+					color: rgba(100, 116, 139, 1);
+				}
+			}
+		}
+		&-chart {
+			margin-top: 10px;
+		}
+	}
+	&__body {
+		margin-top: 6px;
+		.stock-exchange {
+			background: #fff;
+			border-radius: 8px;
+			padding: 6px;
+			.item {
+				border-bottom: 1px dashed rgba(226, 232, 240, 1);
+				&:last-child {
+					border-bottom: none;		
+				}
+				.name {
+					width: calc(100% - 60px - 112px);
+					order: 1;
+					padding: 6px 5px;
+					&-top {
+						position: relative;
+						padding-left: 15px;
+						img {
+							width: 14px;
+							height: 14px;
+							object-fit: contain;
+							position: absolute;
+							top: 3px;
+							left: 0;
+
+						}
+						span {
+							font-size: 14px;
+							line-height: 19px;
+							text-transform: uppercase;
+							color: rgba(15, 26, 42, 1);
+							font-family: "Montserrat-Bold";
+						}
+					}
+					&-bottom {
+						margin-top: 5px;
+						span {
+							font-size: 12px;
+							line-height: 15px;
+							color: rgba(15, 26, 42, 1);
+							font-family: "Montserrat-Regular";
+						}
+					}
+				}
+				.chart {
+					width: 60px;
+					order: 2;
+					img {
+						width: 100%;
+						height: 44px;
+						object-fit: contain;
+					}
+				}
+				.value {
+					width: 112px;
+					order: 3;
+					&-score {
+						text-align: right;
+						span {
+							font-size: 14px;
+							font-family: "Montserrat-Bold";
+							line-height: 19px;
+							color: rgba(15, 26, 42, 1);
+						}
+					}
+					&-index {
+						margin-top: 5px;
+						text-align: right;
+						span {
+							font-size: 14px;
+							font-family: "Montserrat-Medium";
+							line-height: 19px;
+						}
+						&.reduce {
+							span {
+								color: rgba(237, 38, 73, 1);
+							}
+						}
+						&.increase {
+							span {
+								color: rgba(0, 159, 80, 1);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&__bottom {
+		margin-top:10px;
+		border-radius: 8px;
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		a {
+			font-size: 16px;
+			line-height: 22px;
+			color: rgba(0, 114, 248, 1);
+			font-family: "NotoSans-Medium";
+			display: flex;
+			justify-content: center;
+			padding: 10px 0;
+			transition: all 0.3s;
+			img {
+				width: 24px;
+				height: 24px;
+				object-fit: contain;
+				margin-left: 5px;
+			}
+			&:hover {
+				color: $color_main;
 			}
 		}
 	}

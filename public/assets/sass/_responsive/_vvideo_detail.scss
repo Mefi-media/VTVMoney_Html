@@ -99,14 +99,38 @@
 {
 	.vvideo {
 		&-detail {
+			padding-top: 10px;
 			&__content {
 				&-main {
 					width: 100%;
 					margin-right: unset;
 					.video-name {
 						.name {
-							font-size: 26px;
-							line-height: 38px;
+							font-size: 18px;
+							line-height: 28px;
+						}
+					}
+					.video-other {
+						margin-top: 15px;
+						&__viewcomment {
+							.views-video,.comment-video {
+								span {
+									font-size: 12px;
+									position: relative;
+									top: 2px;
+								}
+							}
+						}
+						&__time {
+							span {
+								font-size: 12px;
+							}
+						}
+					}
+					.video-desc {
+						margin-top: 15px;
+						p {
+							font-size: 14px;
 						}
 					}
 				}
@@ -116,11 +140,50 @@
 					.lists-video {
 						max-height: unset;
 						padding-right: unset;
-						overflow: unset;
+						clear: both;
+						display: flex;
+				        white-space: nowrap;
+				        overflow: hidden;
+				        overflow-x: scroll !important;
+				        -webkit-overflow-scrolling: touch;
+				        -ms-scroll-chaining: chained;
+				        flex-wrap: nowrap;
+				        &::-webkit-scrollbar {
+					    	display: none;
+					    }
 						.item-vlight {
+							width: 300px;
+							margin-right: 10px;
+							position: relative;
+							&:last-child {
+								margin-right: unset;
+							}
 							&__image {
+								width: 300px;
 								.image {
-									height: 200px;
+									height: 168px;
+								}
+							}
+							&__info {
+								position: absolute;
+								width: 100%;
+								left: 0;
+								bottom: 0;
+								padding: 10px;
+								background: linear-gradient(to top, rgba(0, 0, 0, .9),rgba(0, 0, 0, .1));
+								&-name {
+									white-space: normal;
+									.name {
+										font-size: 12px;
+										line-height: 16px;
+										display: -webkit-box;
+									    -webkit-box-orient: vertical;
+									    -webkit-line-clamp: 2;
+									    overflow: hidden;
+									}
+								}
+								&-time {
+									top: -33px;
 								}
 							}
 						}
@@ -132,10 +195,37 @@
 			&__lists {
 				.item-vlight {
 					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
 					margin-right: unset;
 					&__image {
+						width: 120px;
+						order: 1;
 						.image {
-							height: 240px;
+							height: 68px;
+						}
+						.icon-play {
+							width: 20px;
+							height: 20px;
+						}
+					}
+					&__info {
+						width: calc(100% - 120px);
+						order: 2;
+						padding-left: 8px;
+						margin-top: unset;
+						&-name {
+							.name {
+								font-size: 14px;
+								line-height: 20px;
+							}
+						}
+						&-time {
+							right: 100%;
+							top: 45px;
+							span {
+								font-size: 12px;
+							}
 						}
 					}
 				}
@@ -145,10 +235,37 @@
 			&__lists {
 				.item-vlight {
 					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
 					margin-right: unset;
 					&__image {
+						width: 120px;
+						order: 1;
 						.image {
-							height: 240px;
+							height: 68px;
+						}
+						.icon-play {
+							width: 20px;
+							height: 20px;
+						}
+					}
+					&__info {
+						width: calc(100% - 120px);
+						order: 2;
+						padding-left: 8px;
+						margin-top: unset;
+						&-name {
+							.name {
+								font-size: 14px;
+								line-height: 20px;
+							}
+						}
+						&-time {
+							right: 100%;
+							top: 45px;
+							span {
+								font-size: 12px;
+							}
 						}
 					}
 				}
@@ -157,9 +274,9 @@
 	}
 	.comment-popup {
 		width: calc(100%);
-		height: calc(100vh - 60px);
-		max-height: calc(100vh - 60px);
-		top: 60px;
+		height: calc(100vh - 315px);
+		max-height: calc(100vh - 315px);
+		top: 315px;
 		padding: 20px 0;
 	}
 }

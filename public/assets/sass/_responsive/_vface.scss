@@ -1,0 +1,55 @@
+@media only screen and (min-width: 1200px) and (max-width: 1460px)
+{
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) 
+{
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) 
+{
+	.vface {
+		&-content {
+			&__main {
+				width: 100%;
+				margin-right: unset;
+				&-lists {
+					.lists-author {
+						width: 100%;
+						display: none;
+					}
+					.lists-blog {
+						width: 100%;
+						margin-left: unset;
+						.item-vface {
+							&__info {
+								width: calc(100% - 100px);
+							}
+							&__image {
+								width: 100px;
+								.image {
+									width: 60px;
+									height: 60px;
+								}
+								.name {
+									strong,span {
+										font-size: 12px;
+										line-height: 16px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&__sitebar {
+				width: 100%;
+				display: none;
+			}
+		}
+	}
+}
